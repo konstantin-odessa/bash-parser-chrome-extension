@@ -1,0 +1,33 @@
+{
+  "name": "test_ext",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx webpack",
+    "start2": "SET NODE_ENV=development & webpack --config webpack.config.js --watch --mode development"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "0.0.69",
+    "@types/jquery": "^3.3.4",
+    "@types/rx": "^4.1.1",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "path": "^0.12.7",
+    "script-loader": "^0.7.2",
+    "style-loader": "^0.21.0",
+    "ts-loader": "^4.4.2",
+    "typescript": "^2.9.2",
+    "webpack": "^4.16.0",
+    "webpack-chrome-extension-reloader": "^0.8.3",
+    "webpack-cli": "^3.0.8"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "rxjs": "^6.2.1"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "My Ext",
+  "version": "1.0",
+  "description": "this extension parse bash.im quotes and replace original content redesigned one",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://bash.im/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

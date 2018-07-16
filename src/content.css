@@ -1,0 +1,78 @@
+.movies-list__container {
+    margin: 20px 0;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+}
+
+.movies-list__title {
+    padding: 30px;
+    text-align: center;
+}
+
+.movies-list__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    list-style: none;
+    padding: 0;
+    background: #00bfff21;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-around;
+}
+
+.movies-list__item {
+    width: 180px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #f0f8ff70;
+    transition: ease-in-out .2s;
+    margin: 5px;
+    height: 270px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.movies-list__item:hover {
+    background-color:#f0f8ffbf;
+}
+
+.movie-item__title {font-size: 16px;line-height: 16px;}
+
+.bash-quote__content {
+    overflow: auto;
+    text-align: left;
+    font-size: 10px;
+}
+
+.quote-pic {
+    max-width: 150px;
+    max-height: 100px;
+    margin: 10px auto;
+}
+
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
